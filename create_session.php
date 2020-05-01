@@ -5,13 +5,14 @@
 
     if(isset($_SESSION['views'])) {
         $_SESSION['views'] = $_SESSION['views'] + 1;
+        echo "<p>" . $_SESSION['views'] . "</p>";
+        echo "<p>" . $_SESSION['browser'] . "</p>";
+        echo "<p>" . $_SESSION['role'] . "</p>";
     } else {
         $_SESSION['views'] = 0;
     }
 
-    echo "<p>" . $_SESSION['views'] . "</p>";
-    echo "<p>" . $_SESSION['browser'] . "</p>";
-    echo "<p>" . $_SESSION['role'] . "</p>";
+   
 
 
 ?>
